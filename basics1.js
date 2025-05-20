@@ -21,7 +21,7 @@ console.log(Math.LOG10E);
  console.log(Math.floor(Math.random()*11));
  //hme multiply krna hai jitne bhe dgit aa rhe ahi uss range hai yha pr 11 se isliye multiply kra hai kyuki 0 bhe included hai toh 0-10 tk 11 digit hote hai
 
- //if we want to gernate 11-20 no raandomly
+ //if we want to gernate 11-20 no. randomly
  console.log(Math.floor(Math.random()*10+11));
 
  // if we want to generate  a random no. of a given specific range then the :-->
