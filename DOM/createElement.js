@@ -64,12 +64,16 @@
 // //---replace child---
 // parent.replaceChild(element,child2);//(new element,old element)
 
-const parent=document.getElementById("root");
+// const parent=document.getElementById("root");
 
-const element=document.createElement("div");
-element.innerHTML="hello coder army";
+// const element=document.createElement("div");
+// element.innerHTML="hello coder army";
 
-parent.insertAdjacentElement("beforebegin" , element);
-//parent.insertAdjacentElement("afterbegin" , element);
- //parent.insertAdjacentElement("beforeend" , element);
-//parent.insertAdjacentElement("afterend" , element);
+// //parent.insertAdjacentElement("beforebegin" , element);
+// parent.insertAdjacentElement("afterbegin" , element);
+// // parent.insertAdjacentElement("beforeend" , element);
+// //parent.insertAdjacentElement("afterend" , element);
+
+//***********delete node or element************** */
+// document.querySelector('li').remove();//removes first item of list
+
