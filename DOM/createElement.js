@@ -70,3 +70,6 @@ const element=document.createElement("div");
 element.innerHTML="hello coder army";
 
 parent.insertAdjacentElement("beforebegin" , element);
+//parent.insertAdjacentElement("afterbegin" , element);
+ //parent.insertAdjacentElement("beforeend" , element);
+//parent.insertAdjacentElement("afterend" , element);
