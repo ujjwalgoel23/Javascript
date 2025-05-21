@@ -113,9 +113,3 @@ button:hover {
         font-size: 0.95rem;
     }
 }
-button{
-    background-color: #533772;
-    border-radius:5px;
-    padding:5px;
-    color:white;
-}
