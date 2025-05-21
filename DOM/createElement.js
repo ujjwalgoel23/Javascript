@@ -68,4 +68,5 @@ const parent=document.getElementById("root");
 
 const element=document.createElement("div");
 element.innerHTML="hello coder army";
-parent.AdjacentElement("beforebegin" , element);
+
+parent.insertAdjacentElement("beforebegin" , element);
