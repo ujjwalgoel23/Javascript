@@ -39,3 +39,33 @@
 // parent.children[1].setAttributeNode(element);
 
 //**************************************************/
+//access attribute of a element-->
+// const element=document.getElementById("root");
+// console.log(element.getAttribute("id"));
+
+//    //setattribute-->
+//    element.setAttribute("class","ujjwal");
+//    //remove attribute-->
+//    element.removeAttribute("class");
+
+//********************Add node to the DOM***************/
+//  const parent=document.getElementById("root");
+
+//  const element=document.createElement('li');
+//  element.innerHTML="typescript";
+
+// // parent.prepend(element);//used to add node at starting
+// // parent.append(element);//used to add node at end
+
+// //insert at specific place(insert before)-->
+// const child2=parent.children[1];
+// // parent.insertBefore(element,child2);//(newnode,refrence node)
+
+// //---replace child---
+// parent.replaceChild(element,child2);//(new element,old element)
+
+const parent=document.getElementById("root");
+
+const element=document.createElement("div");
+element.innerHTML="hello coder army";
+parent.AdjacentElement("beforebegin" , element);
