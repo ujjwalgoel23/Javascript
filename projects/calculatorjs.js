@@ -13,5 +13,5 @@ button.addEventListener('click',()=>{
     //result 
     const result=num1+num2;
     const re=document.querySelector("#result");
-    re.innerText="Result : "+result;
+     re.innerText="Result : "+result;
 })
