@@ -25,17 +25,26 @@
 // id5.addEventListener("click",()=>{
 //   body.style.backgroundColor = "orange";
 // })
-
 /**********************************8******* */
 //SECOND METHOD-->
 
-const button=document.querySelectorAll("button");
-const body=document.body;
+// const button=document.querySelectorAll("button");
+// const body=document.body;
 
-button.forEach((button)=>{
-    button.addEventListener("click",()=>{
-        body.style.backgroundColor=button.id;
-    })
+// button.forEach((button)=>{
+//     button.addEventListener("click",()=>{
+//         body.style.backgroundColor=button.id;
+//     })
+// })
+
+//third method--->//most optimised
+//by using the concept of event bubbling and event capturing-->
+const root=document.getElementById("root");
+
+root.addEventListener("click",(event)=>{
+    if(event.target.tagName ==='BUTTON')
+    document.body.style.backgroundColor=event.target.id;
 })
+
 
 
