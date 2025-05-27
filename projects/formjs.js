@@ -100,7 +100,7 @@ const questionBank = [
     answer: "Don Bradman"
   }
 ];
-
+ 
 function randomQuestion() {
   const data = new Set();
 
@@ -109,13 +109,15 @@ function randomQuestion() {
     data.add(questionBank[index]);
   }
 
-  return [...data];
+  return [...data];//convert set into array
 
   //*******optimised version of randomquestion()--> */
 
     //using sort function()-->
     // we know sort fun() is not working correctly in js
-
+    // questionBank.sort(()=>Math.random()-0.5);
+    //  return questionBank.slice(0,5)
+    
 }
 
 const form = document.querySelector("form");
