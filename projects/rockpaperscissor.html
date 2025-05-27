@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Rock Paper Scissors</title>
-  <link rel="stylesheet" href="./rockpapersci_style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stone Paper Scissors Game</title>
+  <link rel="stylesheet" href="./rockpapersci_style.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="player" id="player1">
-      <h2>Player 1</h2>
-      <p>Rock</p>
-    </div>
 
-    <div class="start-button">
-      <button>Start</button>
-    </div>
+  <h1>Stone Paper Scissors</h1>
 
-    <div class="player" id="player2">
-      <h2>Player 2</h2>
-      <p>Scissor</p>
-    </div>
+  <div class="choices">
+    <button class="choice-btn" data-choice="stone"> Stone</button>
+    <button class="choice-btn" data-choice="paper"> Paper</button>
+    <button class="choice-btn" data-choice="scissors"> Scissors</button>
   </div>
+
+  <div class="result" id="result"></div>
+
+  <div class="scoreboard">
+    You: <span id="player-score">0</span> |
+    Computer: <span id="computer-score">0</span>
+  </div>
+
+  <script src="./rockpaperscissorjs.js"></script>
 </body>
 </html>
