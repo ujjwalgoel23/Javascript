@@ -109,15 +109,27 @@ function randomQuestion() {
     data.add(questionBank[index]);
   }
 
-  return [...data];//convert set into array
+  return [...data];//convert set into array    T.C=>0(N)
 
-  //*******optimised version of randomquestion()--> */
+  //*******Better approach  of randomquestion()--> */
 
     //using sort function()-->
     // we know sort fun() is not working correctly in js
     // questionBank.sort(()=>Math.random()-0.5);
-    //  return questionBank.slice(0,5)
+    //  return questionBank.slice(0,5)   T.C=>0(Nlogn)
     
+    // optimised approach of randomquestion()=>
+     const arr=[];
+    let len=questionBank.length;
+    for(let i=0;i<5;i++){
+      const index= Math.floor(Math.random()*length);
+      arr.push(questionBank[index]);
+      
+      //swap=>
+       [arr[index],arr[len-1]]=[arr[len-1],arr[index]];
+         len--;
+    }
+ return arr;
 }
 
 const form = document.querySelector("form");
