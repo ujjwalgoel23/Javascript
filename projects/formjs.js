@@ -122,11 +122,11 @@ function randomQuestion() {
      const arr=[];
     let len=questionBank.length;
     for(let i=0;i<5;i++){
-      const index= Math.floor(Math.random()*length);
+      const index= Math.floor(Math.random()*len);
       arr.push(questionBank[index]);
       
       //swap=>
-       [arr[index],arr[len-1]]=[arr[len-1],arr[index]];
+       [questionBank[index],questionBank[len-1]]=[questionBank[len-1],questionBank[index]];
          len--;
     }
  return arr;
