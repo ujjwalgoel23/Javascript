@@ -10,10 +10,13 @@ const form=document.querySelector('form');
 //     // const result=document.getElementById("result");
 //     // result.innerHTML=`${first.value} ${second.value} `;
 
-
+console.log(event.target.value);
 //*************************OPTIMISED CODE****************************/
-  const data=new FormData(form);
-
+  const data = new FormData(form);// this is API
+//fetching data-> 
+  // console.log(Array.from(data.values()));
+  //console.log(Array.from(data.entries())); return the data in 2d array
+  
 
 //     // document.body.append(result);   
   });
