@@ -137,7 +137,7 @@
 
       const result=document.getElementById("result");
       
-      const first_message=`hello ${name} ${surname}`;
+      const first_message=`hello ${name} ${surname}.`;
       const second_message=`your Zodiac sign is ${zodiacsign[month-1]}`;
       const third_message=compliment[day-1];
 
@@ -151,6 +151,11 @@
        index=(day*month*year)%20;
       const sixth_message=predictions[index];
 
-      result.innerText = `${first_message} ${second_message} ${third_message} ${fourth_message}  ${fifth_message} ${sixth_message}`;
+      result.innerText = `${first_message} 
+                          ${second_message} 
+                          ${third_message} 
+                          ${fourth_message} 
+                           OUR RECOMMENDATION FOR YOU: ${fifth_message}
+                            YOUR FUTURE PREDICTION IS:${sixth_message}`;
     })
 
