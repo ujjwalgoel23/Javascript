@@ -14,7 +14,6 @@ function getComputerChoice() {
 
 function determineWinner(player, computer) {
   if (player === computer)    return 'tie';
-
   if (
     (player === 'stone' && computer === 'scissors') ||
     (player === 'paper' && computer === 'stone') ||
@@ -31,14 +30,16 @@ buttons.forEach(button => {
     const computerChoice = getComputerChoice();
     const winner = determineWinner(playerChoice, computerChoice);
 
-    let message = `You chose ${playerChoice}. Computer chose ${computerChoice}. `;
+    let message = `You choose ${playerChoice}. Computer choose ${computerChoice}. `;
 
     if (winner === 'tie') {
       message += "It's a tie.";
-    } else if (winner === 'player') {
+    } 
+    else if (winner === 'player') {
       message += "You win.";
       playerScore++;
-    } else {
+    } 
+    else {
       message += "Computer wins.";
       computerScore++;
     }
