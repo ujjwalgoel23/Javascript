@@ -156,6 +156,6 @@
                           ${third_message} 
                           ${fourth_message} 
                            OUR RECOMMENDATION FOR YOU: ${fifth_message}
-                            YOUR FUTURE PREDICTION IS:${sixth_message}`;
+                           YOUR FUTURE PREDICTION IS:${sixth_message}`;
     })
 
