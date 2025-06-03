@@ -29,4 +29,6 @@ console.log(Math.LOG10E);
  let max=60;     //no.of element=max-min+1;
  let min=50;
  console.log(Math.floor(Math.random()*(max-min+1)+min));
+ //agar hm chaiye ki value point me bhe aaye toh hm fix() method use krte hai:->
+ console.log(Math.random()*10+1).toFixed(1); // here 1 ka mtl hai ki ek decimal ka ans degaa
  
