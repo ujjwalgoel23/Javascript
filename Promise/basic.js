@@ -44,5 +44,4 @@ const obj=fetch('http://api.weatherapi.com/v1/current.json?key=2321325ebd9b474bb
     });//this method is  also known as promise chaining
      
 
-//********************ASYNC/AWAIT**********************/
 
