@@ -17,7 +17,7 @@ const obj=fetch('http://api.weatherapi.com/v1/current.json?key=2321325ebd9b474bb
     //     })
 
 // obj.then((response)=>{
-//     console.log(response.json()); // ye he promise he return krega. ye bhe ke async task hai toh execute hone me time lgega
+//     console.log(response.json()); // ye he promise he return karega. ye bhe ke async task hai toh execute hone me time lgega
 // })
    
 // obj.then((response)=>{
