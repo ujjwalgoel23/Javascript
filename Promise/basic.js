@@ -41,7 +41,7 @@ const obj=fetch('http://api.weatherapi.com/v1/current.json?key=2321325ebd9b474bb
         return response.json();
     }).then((data)=>{
         console.log(data);
-    });//this method is  also known as promise chaining
-     
+    });
+     //this method is  also known as promise chaining
 
 
