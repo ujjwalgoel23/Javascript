@@ -4,7 +4,7 @@
 // }
 // //using nested loop:->
 // for(let i=0;i<6;i++){
-//     let string="";
+//     let string="";  
 //   for(let j=1;j<=5;j++){
 //     string+=j+" ";
 //   }
