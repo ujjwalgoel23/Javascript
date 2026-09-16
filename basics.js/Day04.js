@@ -64,15 +64,15 @@
 // const obj4={...obj1,...obj2};
 // console.log(obj4) ;
 
-// //nested object
-// const user={
-//     name:"ujjwal",
-//     balanace:420,
-//     address:{
-//         pincode:203412,
-//         city:"delhi",
-//     }
-// }
+//nested object
+const user={
+    name:"ujjwal",
+    balance:420,
+    address:{
+        pincode:203412,
+        city:"delhi",   
+    }
+}
 // console.log(user.address.city);
 // //use of "assign" in nested object:-
 // const user2=Object.assign({},user);
@@ -104,5 +104,18 @@ const arr=[1,2,3,4,5];
 const[first,second,...third]=arr;
 console.log(first,second,third);
 
+// //shallow copy
+// let obj1={
+//     name:"ujjwal",
+//     age:20
+// }
+// let obj2=obj1;
+// obj2.name="rohit";// aab ye change donoobj1/obj2 me reflect hoga kyoki ye shall0w copy hai
+// console.log(obj2);
+
+// //deep copy
+//  let obj4=structuredClone(obj1);
+//  obj4.name="mohit";
+//  console.log(obj4,obj1);// aab ye change dono obj1/obj2 dono me reflect nhi hoga(only obj4 me hoga) kyuki yeh deep copy hai
 
 

@@ -9,7 +9,7 @@ function timing(){
 
   timer.style.fontSize="200px";
   timer.style.display="flex";
-  timer.style.alignItems="center";
+  timer.style.alignItems="center"; 
   timer.style.justifyContent="center";
   timer.style.height="100vh";
 

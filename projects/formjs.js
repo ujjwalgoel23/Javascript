@@ -177,6 +177,8 @@ output.style.fontSize = "20px";
 output.style.fontWeight = "bold";
 form.appendChild(output);
 
+
+
 // Event Listener
 form.addEventListener("submit", (event) => {
   event.preventDefault();

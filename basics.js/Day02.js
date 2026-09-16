@@ -8,19 +8,22 @@ console.log(arr.length);
 console.log(arr[2]);
   //OR
   console.log(arr.at(2))
-  /*"at" method is latest to access the lemenet of array , it also access neg. index such as
-   -1 then the last value is printed while []does not carry neg. index*/
+  /*"at" method is latest to access the element of array , it also access neg. index such as
+   -1 then the last value is printed while '[]' does not carry neg. index*/
        
    //copying the element
    const newarr=arr;
    console.log(newarr)
    console.log(newarr==arr);
 
+   //creating a clone of array
+   const arr2=structuredClone(arr);// arr2 me same array copy ho jyega 
+
    // pushing more element in array at end 
    arr.push("goel");
    console.log(arr);
 
-   //deleting the element from array;
+   //deleting the last element from array;
    arr.pop();
    console.log(arr);
 
@@ -36,21 +39,22 @@ console.log(arr);
 delete arr[0];
 console.log(arr);
 // iski yeh disadvantage hai ki ye value toh delete kr degaa pr space deltee nhi kregaa
-//thatswhy hm use nhi krte delete ko
+//that's why hm use nhi krte , shift/pop use krte hai
 
 console.log(arr.indexOf("ujjwal"));
 console.log(arr.lastIndexOf("ujjwal"));
- console.log(arr.includes(11));
+ console.log(arr.includes(11));// gives true/false 
 
 //IMPORTANT FOR INTERVIEW
- //slice()--> first value first index , second value endindex which is not in included
+ //slice()--> first value first index , second value endindex which is not in included, original array me kuch bhe change nahi hota
 console.log(arr.slice(2,4));
-//splice()--> first value->starting index , second value->no. of element you want to print
+//splice()--> first value->starting index , second value->no. of element you want to print, original array me change hota hai
 console.log(arr.splice(2,4));
 //or agar aab hm arr kko print krange toh dheknge ki arrray se splice wlaa part cut ho gya hai
 
+
 //modified version of splice operation-->
-// splice(starting_index,total_element_delete,add value);
+// splice(starting_index,total_element_delete,add value);"add value" waha pr add hote hai jis index se hmne value delete kre hai, hm kitne bhe value add kr skte hai
 console.log(arr.splice(2,4,90,30,40,70));
 console.log(arr);
 
@@ -62,7 +66,7 @@ console.log(arr3);
 
 
 arr1.push(arr2);//prefer not to use
-console.log(arr1);
+console.log(arr1); // ans-[2,35,6,11,[5,12,19,20]] 
 
 //2D array
 let arr2d=[[1,2,3],[4,5,6],[7,8,9]];
@@ -78,6 +82,6 @@ console.log(convertarr);
 let abc=[1,2,3,45,6];
 console.log(Array.isArray(abc));
 
-// new metgod to declare array
+// new method to declare array
 let ac= new Array(91,2,3,4,);//agar hm yha pr single value dete hai toh vo size hota hai array ka
 console.log(ac);

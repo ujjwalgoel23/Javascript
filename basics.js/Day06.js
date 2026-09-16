@@ -2,14 +2,14 @@
 // for(let i=0;i<20;i++){
 //     console.log("hello");
 // }
-// //using nested loop:->
-// for(let i=0;i<6;i++){
-//     let string="";  
-//   for(let j=1;j<=5;j++){
-//     string+=j+" ";
-//   }
-//   console.log(string);
-// }
+//using nested loop:->
+for(let i=0;i<6;i++){
+    let string="";  
+  for(let j=1;j<=5;j++){
+    string+=j+" ";
+  }
+  console.log(string);
+}
 
 //WHILE LOOP-->
 // let i=0;

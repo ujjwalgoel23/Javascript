@@ -37,7 +37,7 @@
 //     })
 // })
 
-//third method--->//most optimised
+//third method--->//most optimized
 //by using the concept of event bubbling and event capturing-->
 const root=document.getElementById("root");
 
