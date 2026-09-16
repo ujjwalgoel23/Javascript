@@ -43,7 +43,7 @@
 
   //size =20
   const victims=[
-    "You always help everyone, but no one stands by you.",
+        "You always help everyone, but no one stands by you.",
         "You give your best to people who barely notice.",
         "You're too pure for this world.",
         "You always forgive, even when they don’t deserve it.",

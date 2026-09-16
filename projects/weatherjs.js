@@ -12,4 +12,4 @@ function updated_temp(data){
     .then(data=>updated_temp(data))
     .catch(error=>console.log(error));
     
-})
+})   
